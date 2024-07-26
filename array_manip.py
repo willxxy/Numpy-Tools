@@ -12,6 +12,11 @@ print("\nReshaped signal (4, 6):\n", reshaped_signal)
 transposed_signal = np.transpose(signal, (1, 0))
 print("\nTransposed signal (4, 6):\n", transposed_signal)
 
+# Just add anoteher dimension?
+data = np.array([[1, 2, 3], [4, 5, 6]])
+new_data = np.expand_dims(data, axis=0)
+print(new_data.shape)  # Output: (1, 2, 3)
+
 ### THESE TWO ARE DIFFERENT
 '''
 Original signal (6, 4):
